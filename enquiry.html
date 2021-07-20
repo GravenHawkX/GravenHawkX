@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<section class="showcase">
+    <header>
+        <div class="logo">
+            <h1>Enquiry</h1> 
+        </div>
+        <b ><a style="
+            text-decoration: none;
+            text-shadow: #0000ff;
+            position: relative;
+            z-index: 10;
+            font-size:  25px;
+            color: white;
+            text-transform: uppercase;
+        " href="file:///C:/Users/shark/Visual%20Studio%20Files/Travel%20website/index.html" >Home</a></b>
+    </header>
+    <body>
+        <video  src="video.mp4" muted loop autoplay ></video>
+
+        <!-- <img src="enquiry.jpg" alt=""> -->
+        <div class="text">
+            <style >
+                form
+                {
+                    display: absolute;
+                    
+                }
+
+                form placeholder{
+                    font-family: 'Roboto', sans-serif;
+                }
+                
+                b{
+                    color:red;
+                }
+            </style>
+            <script>
+                    function message(){
+                        document.getElementById("demo").innerHTML = 'Question Recieved!';
+                    }
+            </script>
+             <p style="text-shadow: 2px 2px black;" class="words">If you wish to ask or contact the owner of the website about <br> any details, or the travel manager about a problem or <br> inquiry then fill this form</p>
+            <form action="Account" autocomplete="off">
+                <input type="text"  placeholder="First Name" required><b>*</b>
+                <br>
+                <br>
+                <input type="text"  placeholder="Last Name" required><b>*</b>
+                <br>
+                <br>
+                <input type="text"  placeholder="Email_ID"><b>*</b>
+                <br>
+                <br>
+                <input type="text"  style="font-size: 12pt; height: 100px; width:280px;" placeholder=" What is your question?"><b>*</b>
+                <br>
+                <br> 
+                <p id="demo">Question being input.....</p>
+                <br>
+                <input type="submit" onclick="message()" value="Let's Go">
+                
+            </form>
+        </div>
+    </body>
+</section>
+    <body>
+        <div id="image">
+            <img src="question.png" alt="">
+        </div>
+    </body>
+</html>

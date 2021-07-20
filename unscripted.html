@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Demo</title>
+
+</head>
+<body>
+    <form action="registration.html" autocomplete="off">
+        <label > Age: </label>
+            <input type="text" name="txt_age" id="txt_age" pattern="[0-9]{1,2}" title="two-digits only">  
+                <!-- pattern="[range for input value of characters]{limiting range on number of characters}" -->
+            <br>
+        <label> Contact: </label><br>
+			<label> Country code: +</label>
+			    <input type="text" name="txt_contact" size="3" id="txt_contact" pattern="[0-9]{1,3}" title="upto 3 digits only">
+
+			    <input type="text" name="txt_contact" id="txt_contact" pattern="[0-9]{8,10}" title="max Ten digits only">
+                    <label for="">User_name:</label>
+                <input type="text" name="txt_contact" size="3" id="txt_contact" pattern="[0-9a-zA-Z]{1,3}" title="upto 3 digits only">
+			        <input type="submit">
+	</form>
+
+            <form id="myform" method="post">
+                Enter the User_name
+                    <input type="text" id="uname"> <br>
+                    <span id="msg" style="color:red;"></span>
+                    <input type="button" value="Validate" onclick="Myfunction();">
+    
+                    <!-- <input type="submit" value="Validate"> -->
+            </form>
+
+    <script type="text/javascript">
+    function getfocus(){
+        alert("inside getfocus");
+        window.onload = function() { 
+  document.getElementById("Box1").focus();
+        
+        }
+    }
+        // document.getElementById("myform").onsubmit= function()
+
+        /*function Myfunction()
+        {
+            var pattern =/^[a-z0-9_]{8,25}$/i; 
+            //the pattern identifier syntax "/" deinfes the start of pattern, "^" defines the portion right after comes first, "$" shows end of the pattern, and / end of description. "i" defines that it is case insensitive
+            var text = document.getElementById("uname");
+            if(!pattern.test(text.value))// we are texting the contents of the input box with the pattern and its limits
+            {
+                alert("Enter correct Username");
+                document.getElementById("msg").innerHTML="Username should contain at least 8 characters";
+                text.focus(); // the .focus is used so that the mouse cursor autmatically goes into the textbox where the error is given. It is a useful accessibility setting.
+            } 
+            else
+            {
+                document.getElementById("myform").action="welcome.php";        
+            }
+        }*/
+    </script>
+        
+</body>
+</html>
